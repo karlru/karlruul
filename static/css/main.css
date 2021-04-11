@@ -47,3 +47,11 @@ a:visited {
 		display: none;
 	}
 }
+
+.router-link-exact-active.nav-phone-link {
+	filter: contrast(0.2);
+}
+
+.router-link-exact-active.nav-desktop-link {
+	color: gray;
+}

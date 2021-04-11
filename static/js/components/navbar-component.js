@@ -8,12 +8,12 @@ const styles = css `
 		width: 100%;
 	}
 
-	#nav-buttons {
+	#nav-phone .nav-buttons {
 		text-align: center;
 		margin-top: 20%;
 	}
 
-	#nav-buttons img {
+	#nav-phone .nav-buttons img {
 		margin-left: 3%;
 		margin-right: 3%;
 	}
@@ -25,26 +25,43 @@ const styles = css `
 	#nav-blog img, #nav-projects img {
 		width: 6vh;
 	}
+
+	#nav-desktop {
+		width: 100%;
+	}
+
+	#nav-desktop .nav-buttons {
+		text-align: end;
+		margin-top: 3%;
+	}
+
+	#nav-desktop .nav-buttons a {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
 `
 
 const NavbarTemplate = `
 	<div id="nav" class=${styles}>
 		<div id="nav-phone" class="phone">
-			<div id="nav-buttons">
-				<router-link id="nav-blog" to="/blog">
+			<div class="nav-buttons">
+				<router-link class="nav-phone-link" id="nav-blog" to="/blog">
 					<img src="static/img/icons/blog.png">
 				</router-link>
-				<router-link id="nav-home" to="/">
+				<router-link class="nav-phone-link" id="nav-home" to="/">
 					<img src="static/img/icons/home.png">
 				</router-link>
-				<router-link id="nav-projects" to="/projects">
+				<router-link class="nav-phone-link" id="nav-projects" to="/projects">
 					<img src="static/img/icons/projects.png">
 				</router-link>
 			</div>
 		</div>
 
 		<div id="nav-desktop" class="desktop">
-
+			<div class="nav-buttons">
+				<router-link to="/blog" class="nav-desktop-link">blog</router-link>
+				<router-link to="/projects" class="nav-desktop-link">projects</router-link>
+			</div>
 		</div>
 	</div>
 `

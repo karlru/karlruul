@@ -11,7 +11,6 @@ const router = new VueRouter({
       name: 'home',
       components: {
         body: Index,
-        navbar: Navbar,
       },
     },
     {
