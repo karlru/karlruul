@@ -68,7 +68,7 @@ const BlogTemplate = `
 		<h2 id="blog-title">blog</h2>
 
 		<div id="blog-posts" v-if="posts">
-			<a class="blog-post" v-for="post in posts" href="#" v-bind:style="{ 
+			<router-link class="blog-post" v-for="post in posts" to="#" v-bind:style="{ 
 				backgroundImage: 'linear-gradient(0deg, #00000088 30%, #ffffff44 100%), url(/' + [[ post.background_image ]] + ')' 
 			}">
 				<div class="blog-post-primary">
@@ -79,7 +79,7 @@ const BlogTemplate = `
 				<div class="blog-post-secondary">
 					<p>[[ post.content | truncatechars(200) | striptags ]]</p>
 				</div>
-			</a>
+			</router-link>
 		</div>
 	</div>
 `

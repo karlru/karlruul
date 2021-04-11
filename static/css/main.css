@@ -33,3 +33,17 @@ a:visited {
 	text-decoration: none;
 	color: var(--text-color);
 }
+
+.desktop {
+	display: none;
+}
+
+@media only screen and (min-aspect-ratio: 11/10) {
+	.desktop {
+		display: initial;
+	}
+
+	.phone {
+		display: none;
+	}
+}

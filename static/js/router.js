@@ -1,3 +1,4 @@
+import { Navbar } from './components/navbar-component.js'
 import { Index } from './components/index-component.js'
 import { Blog } from './components/blog-component.js'
 import { Auth } from './components/auth-component.js'
@@ -10,6 +11,7 @@ const router = new VueRouter({
       name: 'home',
       components: {
         body: Index,
+        navbar: Navbar,
       },
     },
     {
@@ -17,6 +19,7 @@ const router = new VueRouter({
       name: 'blog',
       components: {
         body: Blog,
+        navbar: Navbar,
       },
     },
     {
@@ -24,6 +27,7 @@ const router = new VueRouter({
       name: 'auth',
       components: {
         body: Auth,
+        navbar: Navbar,
       },
     },
   ]
