@@ -12,7 +12,7 @@ const $TEMPLATE_NAME = {
 	template: $TEMPLATE_NAMETemplate,
 	created: function() {
 
-	}
+	},
 }
 
 export { $TEMPLATE_NAME }

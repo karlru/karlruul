@@ -8,17 +8,23 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: Index,
+      components: {
+        body: Index,
+      },
     },
     {
       path: '/blog',
       name: 'blog',
-      component: Blog,
+      components: {
+        body: Blog,
+      },
     },
     {
       path: '/auth',
       name: 'auth',
-      component: Auth,
+      components: {
+        body: Auth,
+      },
     },
   ]
 })

@@ -1,0 +1,35 @@
+:root {
+	--bg-color: #F4F5F4;
+	--text-color: #151513;
+	--success-color: #8F9489;
+	--warning-color: #DCD3BC;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body, #app {
+	height: 100%;
+}
+
+body {
+	color: var(--text-color);
+	background-color: var(--bg-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+a:visited {
+	text-decoration: none;
+	color: var(--text-color);
+}

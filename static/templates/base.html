@@ -3,22 +3,23 @@
 <html lang="en" translate="no">
 <head>
 	<meta name="google" content="notranslate">
+	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
-	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<script src="https://unpkg.com/vue-router@3.5.1/dist/vue-router.js"></script>
 	<script src="https://unpkg.com/vuex@3.6.2/dist/vuex.js"></script>
 	<script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
 
-	<title>webpage</title>
+	<title>karlruul</title>
 </head>
 <body>
 	<script type="module" src="{% static 'js/main.js' %}"></script>
 	
 	<div id="app">
-		<router-view></router-view>
-	</div>
-
-	
+		<router-view name="nav"></router-view>
+		<router-view name="body"></router-view>
+	</div>	
 </body>
 </html>
