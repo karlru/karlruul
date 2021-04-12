@@ -232,7 +232,7 @@ const IndexTemplate = `
 	        	<div id="index-navigation-links">
 		        	<router-link class="index-href" id="index-blog-nav" to="/blog"><span>blog</span></router-link>
 		        	<router-link class="index-href" id="index-projects-nav" to="/projects"><span>projects</span></router-link>
-		        	<router-link class="index-href" id="index-about-nav" to="#"><span>about</span></router-link>
+		        	<span v-on:click="scrollToBottom" class="index-href" id="index-about-nav"><span>about</span></span>
 		        </div>
 	        </div>
 	    </div>
@@ -252,6 +252,11 @@ const IndexTemplate = `
 const Index = {
 	delimiters: ['[[', ']]'],
     template: IndexTemplate,
+    methods: {
+		scrollToBottom: function() {
+			 window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+		}
+	},
 }
 
 export { Index }

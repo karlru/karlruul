@@ -59,6 +59,7 @@ const NavbarTemplate = `
 
 		<div id="nav-desktop" class="desktop">
 			<div class="nav-buttons">
+				<router-link to="/" class="nav-desktop-link">home</router-link>
 				<router-link to="/blog" class="nav-desktop-link">blog</router-link>
 				<router-link to="/projects" class="nav-desktop-link">projects</router-link>
 			</div>
