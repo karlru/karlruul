@@ -106,6 +106,36 @@ const styles = css `
 	    animation: fadein 1.5s ease forwards .25s;
 	}
 
+	#about {
+	    height: 100%;
+	    overflow: hidden;
+	}
+
+	#about-img {
+		text-align: center;
+		height: 30%;
+	    overflow: hidden;
+	   	position: relative;
+	    top: 20%;
+	}
+
+	#about-img img {
+	    border-radius: 50%;
+	    max-height: 100%;
+	    max-width: 100%;
+	}
+
+	#about-text {
+		text-align: center;
+		position: relative;
+		top: 30%;
+	    font-size: 2vh;
+	}
+
+	#about-text h1 {
+	    font-size: 5vh;
+	}
+
 	@media only screen and (min-aspect-ratio: 11/10) {
 		#logo {
 		    height: 40%;
@@ -118,6 +148,21 @@ const styles = css `
 		.index-href {
 		    margin: 3%;
 		}
+
+		#about-img {
+	        width: 45%;
+	        float: left;
+	        text-align: right;
+	        margin-right: 5%;
+	        top: 30%;
+	    }
+	    #about-text {
+	        width: 45%;
+	        float: left;
+	        text-align: left;
+	        margin-left: 5%;
+	        top: 40%;
+	    }
 	}
 `
 
@@ -189,6 +234,16 @@ const IndexTemplate = `
 		        	<router-link class="index-href" id="index-projects-nav" to="/projects"><span>projects</span></router-link>
 		        	<router-link class="index-href" id="index-about-nav" to="#"><span>about</span></router-link>
 		        </div>
+	        </div>
+	    </div>
+
+	    <div id="about">
+	        <div id="about-img">
+	            <img src="/static/img/karlruul.jpg">
+	        </div>
+	        <div id="about-text">
+	            <h1>Karl Ruul</h1>
+	            <p>sample text</p>
 	        </div>
 	    </div>
 	</div>
