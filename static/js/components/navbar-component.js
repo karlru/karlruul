@@ -68,13 +68,7 @@ const NavbarTemplate = `
 
 const Navbar = {
 	delimiters: ['[[', ']]'],
-	computed: {
-
-	},
 	template: NavbarTemplate,
-	created: function() {
-	
-	},
 }
 
 export { Navbar }
