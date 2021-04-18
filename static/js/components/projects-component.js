@@ -1,24 +1,24 @@
 import { css } from 'https://unpkg.com/goober@2.0.36/dist/goober.modern.js'
 
 const styles = css `
-
+	
 `
 
-const $TEMPLATE_NAMETemplate = `
-	<div class=${styles}>
-		<p>$TEMPLATE_NAME</p>
+const ProjectsTemplate = `
+	<div class="${styles}">
+		<p>Projects</p>
 	</div>
 `
 
-const $TEMPLATE_NAME = {
+const Projects = {
 	delimiters: ['[[', ']]'],
 	computed: {
 
 	},
-	template: $TEMPLATE_NAMETemplate,
+	template: ProjectsTemplate,
 	created: function() {
-
+		this.$store.dispatch('getAllProjects')
 	},
 }
 
-export { $TEMPLATE_NAME }
+export { Projects }

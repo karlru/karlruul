@@ -6,6 +6,7 @@ from django.views.generic.base import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('apps.blog.urls'), name='blog'),
+    path('projects/', include('apps.projects.urls'), name='projects'),
     path('users/', include('apps.users.urls'), name='users'),
     url(r'^.*$', TemplateView.as_view(template_name='base.html')),
 ]

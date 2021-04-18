@@ -23,8 +23,9 @@ ALLOWED_HOSTS = [
 ]
 
 INSTALLED_APPS = [
-    'apps.users',
     'apps.blog',
+    'apps.projects',
+    'apps.users',
     'ckeditor',
     'django.contrib.admin',
     'django.contrib.auth',

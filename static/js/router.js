@@ -1,6 +1,7 @@
 import { Navbar } from './components/navbar-component.js'
 import { Index } from './components/index-component.js'
 import { Blog } from './components/blog-component.js'
+import { Projects } from './components/projects-component.js'
 import { Auth } from './components/auth-component.js'
 
 const router = new VueRouter({
@@ -21,6 +22,14 @@ const router = new VueRouter({
       name: 'blog',
       components: {
         body: Blog,
+        navbar: Navbar,
+      },
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      components: {
+        body: Projects,
         navbar: Navbar,
       },
     },
